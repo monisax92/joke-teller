@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #d7c96d;
+}
+
+.container {
+  background: url("./robot.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #3D3C3A;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, .3);
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #FDB824;
+  color: #3D3C3A;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+button:active {
+  transform: scale(.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%)
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  button {
+    margin-top: -15rem;
+    box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.8);
+  }
+}
